@@ -26,5 +26,12 @@ Create database *sparse_matrix.db*; define and populate tables *Left* and *Right
 sqlite3 sparse_matrix.db < create_tabs.sql
 ```
 
+## Multiply Left and Right
+The SQL that computes the product of matrices "Left" and "Right" is in file *mat_mult.sql*.  After you create and load the tables, you can execute
+this SQL as follows:
+```
+sqlite3 sparse_matrix.db < mat_mult.sql 
+```
+
 ## LICENSE
 This sample code is licensed under Eclipse Public License 1.0.  See file [LICENSE](https://github.com/rstinejr/SQL-Sparse-Matrix/edit/master/LICENSE)
