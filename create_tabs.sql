@@ -2,7 +2,8 @@ CREATE TABLE Left
 (
 	'i'   INT NOT NULL,
 	'j'   INT NOT NULL,
-	'val' INT NOT NULL
+	'val' INT NOT NULL,
+	PRIMARY KEY(i, j)
 );
 
 INSERT INTO Left
@@ -20,7 +21,8 @@ CREATE TABLE Right
 (
 	'i'   INT NOT NULL,
 	'j'   INT NOT NULL,
-	'val' INT NOT NULL
+	'val' INT NOT NULL,
+	PRIMARY KEY(i, j)
 );
 
 INSERT INTO Right
@@ -30,7 +32,7 @@ VALUES
 	(1, 3, 57),
 	(2, 2, 127),
 	(2, 4, 99),
-	(2, 4, 98),
+	(2, 5, 98),
  	(3, 3, 525),
 	(5, 1, 66);	
 
