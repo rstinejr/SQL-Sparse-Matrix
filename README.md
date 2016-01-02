@@ -33,5 +33,17 @@ this SQL as follows:
 sqlite3 sparse_matrix.db < mat_mult.sql 
 ```
 
+The "secret sauce" of the *mat_mult.sql* sample is the *GROUP BY* command:
+```
+SELECT row_num, col_num, sum(prod)
+FROM
+(
+	SELECT Left.i as row_num, Right.j as col_num, (Left.val * Right.val) prod
+	FROM Left, Right
+	WHERE Left.j = Right.i
+)
+GROUP BY row_num, col_num;
+```
+
 ## LICENSE
 This sample code is licensed under Eclipse Public License 1.0.  See file [LICENSE](https://github.com/rstinejr/SQL-Sparse-Matrix/edit/master/LICENSE)
