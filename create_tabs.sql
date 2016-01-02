@@ -22,3 +22,15 @@ CREATE TABLE Right
 	'j'   INT NOT NULL,
 	'val' INT NOT NULL
 );
+
+INSERT INTO Right
+VALUES
+	(1, 1, 27),
+	(1, 2, 36),
+	(1, 3, 57),
+	(2, 2, 127),
+	(2, 4, 99),
+	(2, 4, 98),
+ 	(3, 3, 525),
+	(5, 1, 66);	
+
