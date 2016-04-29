@@ -19,7 +19,7 @@ sudo apt-get install sqlite3
 
 ## Set Up Database
 
-To illustrate multiplecation, we first need to create a database with the appropriate tables.
+To illustrate multiplication, we first need to create a database with the appropriate tables.
 
 Create database *sparse_matrix.db*; define and populate tables *Left* and *Right*:
 ```
