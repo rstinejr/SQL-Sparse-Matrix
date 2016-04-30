@@ -45,5 +45,10 @@ FROM
 GROUP BY row_num, col_num;
 ```
 
+## Credit
+I'd be very proud if I had dreamed up this approach, but that's not the case.  I learned it fromm a Coursera course on Data Science, [Data Manipulation at Scale: Systems and Algorithms](https://www.coursera.org/learn/data-manipulation/).  
+
+It was so  neat I felt compelled to share it on GitHUB.
+
 ## LICENSE
 This sample code is licensed under Eclipse Public License 1.0.  See file [LICENSE](https://github.com/rstinejr/SQL-Sparse-Matrix/edit/master/LICENSE)
